@@ -1,0 +1,170 @@
+<!--By: Regan Benner | rbenner5051@conestogac.on.ca-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/normalize.css">
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <link rel="stylesheet" href="../styles/css/feedback.css">
+    <title>Art Flux - Feedback</title>
+    <meta name="description" content="Featuring the latest exhibition reviews from the contemporary art world.">
+    <link rel="shortcut icon" type="image/jpg" href="../images/art.png"/>
+</head>
+<body>
+    <header>
+        <img src="../images/art.png" alt="Art Flux" style="float:left";>
+        <h1>Art Flux.</h1>
+        <h2>FEEDBACK</h2>
+
+        <nav id="mainNav">
+            <ul>
+                <li><a href="../index.html">Home</a>
+                  <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Hours</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Meet the Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="images.html">Exhibtion Gallery</a></li>
+                <li><a href="video.html">Artist Videos</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="table.html">Exhibtion Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <nav id="secondaryNav">
+            <figure class="thumbnail1">
+                <a target="" href="../index.html">
+                    <img src="../thumbnails/homethumbnail.png" alt="Home Page Thumbnail" title="Home-Page">
+                    <figcaption>HOME</figcaption>
+                </a>
+            </figure>
+            <figure class="thumbnail2">
+                <a target="" href="images.html">
+                    <img src="../thumbnails/imagethumbnail.png" alt="Image Page Thumbnail" title="Image Page">
+                    <figcaption>EXHIBITION GALLERY</figcaption>
+                </a>
+            </figure>
+            <figure class="thumbnail3">
+                <a target="" href="video.html">
+                    <img src="../thumbnails/videoicon.png" alt="Video Page Thumbnail" title="Video Page">
+                    <figcaption>VIDEOS</figcaption>
+                </a>
+            </figure>
+            <figure class="thumbnail4">
+                <a target="" href="feedback.html">
+                    <img src="../thumbnails/feedbackthumbnail.png" alt="Feedback Page Thumbnail" title="Feedback Page">
+                    <figcaption>FEEDBACK</figcaption>
+                </a>
+            </figure>
+            <figure class="thumbnail5">
+                <a target="" href="table.html">
+                    <img src="../thumbnails/tablethumbnail.png" alt="Table Page Thumbnail" title="Table Page">
+                    <figcaption>EXHIBITION TABLE</figcaption>
+                </a>
+            </figure>
+        </nav>
+
+        <main>
+            <article>
+                <h1>Contact Us</h1>
+                <p>Please feel free to fill out the form below to send us your feedback.</p>
+
+                <form action="process-form" method="post">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <div class="field">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="First Last" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" placeholder="example@email.com" required>
+                        </div>
+                    </fieldset>
+
+                    <div class="exhibitions">
+                        <fieldset>
+                            <legend>Exhibition Information</legend>
+                            <label for="exhibitions">Select the exhibitions you visited:</label>
+                            <select name="exhibitions" id="exhibitions" multiple>
+                                <option value="edPien">Ed Pien</option>
+                                <option value="rebeccaBelmore">Rebecca Belmore</option>
+                                <option value="opel">Greg Curnoe</option>
+                                <option value="audi">Joyce Wieland</option>
+                            </select><br>
+                            <label for="topic">Choose a Reason for Contacting:</label>
+                            <select name="topic" id="topic">
+                                <optgroup label="Inquiry">
+                                    <option value="tours">Tours</option>
+                                    <option value="privateEvents">Private Events</option>
+                                    <option value="volunteering">Volunteering</option>
+                                  </optgroup>
+                                <optgroup label="Reccommendation">
+                                  <option value="artist">Artist</option>
+                                  <option value="exhibition">Exhibition</option>
+                                  <option value="general">General</option>
+                                </optgroup>
+                              </select>
+                        </fieldset>
+                    </div>
+
+                    <fieldset>
+                        <legend>Message</legend>
+                        <div class="textarea">
+                            <label for="message">Include a brief message to tell us more about your experience:</label>
+                            <br>
+                            <br>
+                            <textarea id="message" name="message" rows="7" cols="50" placeholder="Type your message here"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="submit"> 
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button> 
+                    </div>
+                </form>
+            </article>
+        </main>
+
+        <aside id="mainAside">
+            <h2>Review Us:</h2>
+            <form action="process-form" method="post">
+              <fieldset>
+                <div class="visit">
+                    <label for="checkbox">Art Flux Website was: </label><br> 
+                    <input type="checkbox" id="visit" name="visit" value="visit">
+                    <label for="visit">Fun to Visit</label><br>
+                    <input type="checkbox" id="design" name="design" value="design">
+                    <label for="design">Well Designed</label><br>
+                    <input type="checkbox" id="colours" name="colours" value="colours">
+                    <label for="colours">Uses Good Colours</label><br>
+                    <input type="checkbox" id="aoda" name="aoda" value="aoda">
+                    <label for="aoda">Adheres to AODA Standards</label><br>
+                </div>
+                <br>
+                <div class="visit"> 
+                    <label for="visit">Will You Visit Again?</label><br>
+                    <input type="radio" name="visit" id="visitYes"> 
+                    <label for="visitYes">Yes</label> 
+                    <input type="radio" name="visit" id="visitNo"> 
+                    <label for="visitNo">No</label>  
+                </div>
+              </fieldset>
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; Regan Benner | 2021 | rbenner5051@conestogac.on.ca  
+    </footer>
+
+</body>
+</html>

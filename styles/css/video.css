@@ -1,0 +1,17 @@
+iframe{
+    width:500px; 
+    height:320px; 
+    border: 3px solid rgb(177, 177, 177);
+    padding: 10px;
+}
+
+#videoArticle figcaption{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul li{
+    list-style-type: circle;
+}
